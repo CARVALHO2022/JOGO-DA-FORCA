@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Jogo da Forca</title>
+       
+        <!--CSS-->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+        
+       
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+       
+        <!--Icons-->
+        <link rel="icon" type="image/x-icon" href="./imagens/carrasco.png">
+        <script src="https://kit.fontawesome.com/9b4e82f276.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img src=".//imagem/logo.png" alt="logo alura" class="logo">
+        </header>
+
+        <!--TELA INICIAL -->
+            <div class="tela-inicial" id="tela-inicio">
+                <button id="inicia-jogo" class="inicia-jogo-btn">Começar a jogar</button>
+                <button id="adiciona-palavra" class="add-palavra-btn">Adicionar nova palavra</button>
+            </div>
+
+        <!--ADICIONANDO NOVA PALAVRA -->
+        <section class="input-section hide" id="secao-input">
+            <input type="text" id="add-palavra" class="input-add-palavra" placeholder=" Digite uma palavra!!! ">
+
+            <div class="aviso">
+                <img class="aviso-img" src=".//imagem/atencao.png" alt="ponto de exclamação dentro de um círculo">
+                <p class="aviso-p">Digite o nome de uma ferramenta (sem acento e máx. 10 letras)</p>
+            </div>
+
+            <div class="botoes">
+                <button id="salvar-palavra" class="botoes-esquerda">Salvar palavra</button>
+                <button id="salva-e-inicia" class="btn-salva-inicia">Iniciar Jogo</button>
+                <button id="cancela-btn" class="botoes-direita">Cancelar</button>
+                
+            </div>
+        </section> 
+
+
+        <!--JOGO-->
+             
+    <main  class="main-jogo hide" id="main-id">
+        <!--CANVAS -->
+        <canvas width="1200" height="480" id="forca">
+
+        </canvas>      
+
+        <div class="dica"><h2>Dica: Ferramentas</h2></div>
+        <div class="botoes-main">
+            <button id="novo-jogo-btn" class="botoes-esquerda">Novo Jogo</button>
+            <button id="desistir-btn" class="botoes-direita">Desistir</button>
+        </div>
+    </main>
+
+
+
+
+        <footer id="footer">
+            <div class="redes">
+            <p>Minhas redes: </p>
+            <br>
+            <br>
+            <a href="https://github.com/CARVALHO2022/CARVALHO2022.git" title="CARVALHO2022" GitHub" target="_blank">            
+                <img src=".//imagem/logotipo-do-github.png" alt="Logo do GitHub em formato circular."
+                width="45" height="45" id="github">
+                GitHub
+            </a>
+             <a href="https://www.linkedin.com/in/fernando-carvalho-5343118a" title="Fernando carvalho | LinkedIn" target="_blank">
+                <img src=".//imagem/linkedin.jpg" alt="Logo do LinkedIn em formato circular"
+                width="45" height="45" id="linkedin">
+                LinkedIn
+            </a>
+        </div>
+           <br>
+           <br> 
+        <div class="credito">
+        <p>&#169;  Fernando Carvalho - 2022 </p>
+        </div>
+    </footer>
+            
+            
+        </footer>
+
+        <!-- SCRIPTS -->
+        <script src="./js/script.js"></script>
+        <script src="./js/botões.js"></script>
+        <script src="./js/canvas.js"></script>
+        <script src="./js/derrotas-vitoroias.js"></script>
+
+
+    </body>
+
+</html>
